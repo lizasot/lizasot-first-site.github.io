@@ -1,2 +1,2 @@
-# lizasot-first-site.github.io
+# lizasot.github.io
 Попытка в сайт

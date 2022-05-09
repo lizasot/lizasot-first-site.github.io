@@ -1,0 +1,492 @@
+﻿/* ОБЩЕЕ */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+.h3 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+}
+
+.h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* МЕНЮ */
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding-top: 42px;
+}
+
+/* ПОДВАЛ */
+.footer {
+    margin-top: 112px;
+    background: #316099;
+}
+
+.footer-top {
+    padding: 91px 113px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-top-content {
+    width: 495px;
+}
+
+.h3-footer {
+    width: 340px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.footer-button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    padding: 15px 50px;
+    display: inline-block;
+    width: 80%;
+}
+
+hr {
+    opacity: 0.4;
+}
+
+.text-footer {
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.footer-bottom,
+.text-rights {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.footer-bottom {
+    padding: 64px 113px;
+}
+
+.footer-info {
+    display: flex;
+    list-style-type: decimal;
+    justify-content: space-between;
+}
+
+.footer-point {
+    padding-left: 19px;
+    flex-grow: 1;
+    flex-basis: 33.3333%;
+    margin-right: 32px;
+}
+
+.rights {
+    padding-top: 64px;
+}
+
+.text-rights {
+    opacity: 0.4;
+}
+
+@media (max-width: 1024px) {
+    .footer-info {
+        flex-direction: column;
+    }
+
+    .footer-button {
+        padding: 5px 30px;
+    }
+
+    .footer-point {
+        margin-right: 0;
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 667px) {
+    .footer-top {
+        flex-direction: column;
+        padding: 16px 0;
+    }
+
+    .footer-top-content {
+        width: auto;
+    }
+
+    .h3-footer {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        width: auto;
+    }
+
+    .text-footer {
+        text-align: center;
+    }
+
+    .footer-button {
+        padding: 1px 12px;
+        margin: 40px 0;
+    }
+
+    .footer-bottom {
+        padding: 16px;
+    }
+
+    .rights {
+        padding-top: 32px;
+    }
+}
+
+/* ГЛАВНАЯ */
+.top {
+    min-height: 768px;
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.top-narrow {
+    height: 100%;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.intro {
+    padding-top: 115px;
+    flex-grow: 1;
+    background-image: url(img/illustration.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50%;
+}
+
+.h1-main {
+    font-size: 64px;
+    color: #1F3F68;
+    width: 510px;
+    font-weight: 300;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+}
+
+.text-intro {
+    width: 425px;
+}
+
+.top-button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    padding: 15px 50px;
+    display: inline-block;
+    margin-top: 71px;
+}
+
+.what-we-do {
+    padding: 64px 0;
+}
+
+.banner-list {
+    padding-top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner {
+    width: 359px;
+    height: 480px;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    padding: 44px 32px;
+    box-sizing: border-box;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-img {
+    margin-bottom: 51px;
+    align-self: center;
+}
+
+.card-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+}
+
+.project-item {
+    position: relative;
+    flex-grow: 1;
+}
+
+.project-img {
+    width: 100%;
+}
+
+.project-item-left {
+    margin-right: 32px;
+}
+
+.project-img-text {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #fff;
+    position: absolute;
+    top: 64px;
+    right: 64px;
+}
+
+.project-img-text-bottom {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #fff;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+}
+
+.project-bottom-img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.text-project {
+    width: 75%;
+    margin: 32px auto 64px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #222222;
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .banner-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 667px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+
+    .top-narrow {
+        padding-top: 24px;
+    }
+
+    .intro {
+        padding-top: 36px;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h1-main {
+        width: 100%;
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .text-intro {
+        width: 100%;
+        text-align: center;
+    }
+
+    .top-button {
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0px;
+    }
+
+    .banner-list {
+        padding-top: 32px;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .what-we-do {
+        padding: 48px;
+    }
+
+    .h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .text-project {
+        width: 100%;
+    }
+
+    .project-img-text {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .project-bottom-img {
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .project-img-text-bottom {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        left: 16px;
+    }
+
+    .project-item {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 16px;
+    }
+}
+
+/* КОНТАКТЫ */
+.intro-contacts {
+    background: linear-gradient(253.6deg, #98D0FC 2.46%, #3481D7 93.24%);
+    background-color: #3481D7;
+    background-image: url(img/blue_bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 32px 280px;
+}
+
+.h2-contacts {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.text-contact-intro {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.feedback {
+    display: flex;
+    justify-content: center;
+}
+
+
+.input-ta {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.btn {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+}
